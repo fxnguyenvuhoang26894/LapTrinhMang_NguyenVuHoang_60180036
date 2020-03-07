@@ -1,0 +1,13 @@
+public class Lab8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "nguyen vu hoang";
+		String[] words = s.split(" "); //nguy, vu, hoang
+		String str = "";
+		for (String string : words) {	
+			str += string.substring(0, 1).toUpperCase() + string.substring(1,string.length()+1);
+		}
+		System.out.println(str);
+	}
+}

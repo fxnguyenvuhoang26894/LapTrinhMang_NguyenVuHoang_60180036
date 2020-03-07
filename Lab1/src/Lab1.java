@@ -1,0 +1,42 @@
+
+
+import java.util.Scanner;
+
+public class Lab1 {
+
+	public static void main(String[] args) {
+		// Bai 1. Nhập h�? và tên
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhap ho va ten:");
+		String hoTen = scanner.nextLine();
+		System.out.println("Nhap diem Tb:");
+		int diemTB = scanner.nextInt();
+		System.out.printf("%s %d diem\n",hoTen,diemTB);
+//		
+		// bài 2. Hình chữ nhật
+		System.out.println("Nhap chieu dai:");
+		int dai = scanner.nextInt();
+		System.out.println("Nhap chieu rong:");
+		int rong = scanner.nextInt();
+		int chuVi = (dai + rong) * 2;
+		System.out.printf("Chu vi hinh chu nhat: %d\n",chuVi);
+		int dienTich = dai * rong;
+		System.out.printf("Dien tich hinh chu nhat: %d\n",dienTich);
+		System.out.printf("Canh nho nhat: %d\n",Math.min(dai, rong));
+		
+		//bài 3. Hình Lập Phương
+		System.out.println("Nhap canh hinh lap phuong:");
+		int canh = scanner.nextInt();
+		System.out.printf("The tich hinh lap phuong:" +Math.pow(canh, 3));
+
+		//bai 4. 
+		System.out.println("\nNhap cac he so phuong trinh bac 2 lan luot la:");
+		int a = scanner.nextInt();
+		int b = scanner.nextInt();
+		int c = scanner.nextInt();
+		double delta = Math.pow(b, 2) * 4 *a *c;
+		System.out.print(Math.sqrt(delta));
+		scanner.close();
+	}
+}
+	

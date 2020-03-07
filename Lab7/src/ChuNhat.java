@@ -1,0 +1,40 @@
+import jdk.nashorn.internal.runtime.regexp.joni.constants.TargetInfo;
+
+public class ChuNhat {
+	int rong, dai;
+
+	public int getRong() {
+		return rong;
+	}
+
+	public void setRong(int rong) {
+		this.rong = rong;
+	}
+
+	public int getDai() {
+		return dai;
+	}
+
+	public void setDai(int dai) {
+		this.dai = dai;
+	}
+	public double getChuVi() {
+		return (getDai() + getRong()) * 2;
+	}
+	public double getDienTich() {
+		return getDai() * getRong();
+	}
+	public ChuNhat(int dai, int rong) {
+		// TODO Auto-generated constructor stub
+		this.setDai(dai);
+		this.setRong(rong);
+	}
+	public void xuat() {
+		// TODO Auto-generated method stub
+		System.out.println("Thong tin hinh chu nhat: ");
+		System.out.println("Chieu rong " + getRong() +
+							"\nChieu dai: " +getDai() +
+							"\nChu vi: " + getChuVi() +
+							"\nDien Tich" +  getDienTich());
+	}
+}

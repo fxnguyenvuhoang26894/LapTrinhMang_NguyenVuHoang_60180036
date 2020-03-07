@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Giai phuong trinh bac nhat");
+		System.out.println("Nhap he so a:");
+		int a = scanner.nextInt();
+		System.out.println("Nhap he so b:");
+		int b = scanner.nextInt();
+		if(a==0) {
+			if(b==0) {
+				System.out.println("Phuong trinh co vo so nghiem");
+			}
+			else {
+				System.out.println("Phuong trinh vo nghiem");
+			}
+		}
+		else {
+			System.out.printf("Phuong trinh co nghiem:" + (float)-b/a);
+		}
+		scanner.close();
+	}
+
+}

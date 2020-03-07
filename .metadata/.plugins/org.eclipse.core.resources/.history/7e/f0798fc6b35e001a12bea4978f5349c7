@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Lab5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Double> list =new ArrayList<Double>();
+		while(true){
+			Double x = scanner.nextDouble();
+			scanner.nextLine();
+			list.add(x);
+			System.out.print("Nhap them (Y/N)");
+			if(scanner.nextLine().equals("N")||scanner.nextLine().equals("n")){
+			break;
+			}
+			}
+		for(Double x: list) {
+			System.out.print(x+"\t");
+		}
+	}
+
+}

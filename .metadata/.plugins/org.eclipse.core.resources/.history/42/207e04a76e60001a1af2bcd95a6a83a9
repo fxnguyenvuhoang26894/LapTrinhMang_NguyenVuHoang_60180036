@@ -1,0 +1,16 @@
+
+public final class XPoly {
+	public static final double sum(double x){
+		return x +=x;
+	}
+	
+	public static final String TOUPPERFIRSTCHAR(String s) {
+		String[] words = s.split(" ");
+		String str = "";
+		for (String string : words) {
+			str += string.substring(0, 1).toUpperCase() + str.substring(1);
+		}
+
+		return str;
+	}
+}

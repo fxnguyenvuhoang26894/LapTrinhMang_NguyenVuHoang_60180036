@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// giải phương trình bậc 1
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Giai phuong trinh bac nhat");
+		System.out.println("Nhap he so a:");
+		int a = scanner.nextInt();
+		System.out.println("Nhap he so b:");
+		int b = scanner.nextInt();
+		if(a==0) {
+			if(b==0) {
+				System.out.println("Phuong trinh co vo so nghiem");
+			}
+			else {
+				System.out.println("Phuong trinh vo nghiem");
+			}
+		}
+		else {
+			System.out.printf("Phuong trinh co nghiem:" + (float)-b/a);
+		}
+		
+		//giải phuong trình bậc 2
+		System.out.println("\nNhap cac he so phuong trinh bac 2 lan luot la:");
+		int x = scanner.nextInt();
+		int y = scanner.nextInt();
+		int z = scanner.nextInt();
+		if(x==0) {
+			if(y==0) {
+				System.out.println("Phuong trinh co vo so nghiem");
+			}
+			else {
+				System.out.println("Phuong trinh vo nghiem");
+			}
+		}
+		else {
+			double delta = Math.pow(y, 2) * 4 *x *z;
+			if(delta<0) 
+				System.out.println("Phuong trinh vo nghiem");
+			else if(delta==0) 
+				System.out.printf("Phuong trinh co nghiem kep" + (float)-y/(2*x));
+			else
+				System.out.println("Phuong trinh co 2 nghiem:" + (float)(-y+Math.sqrt(delta))/(2*x)
+									+"va "+ (float)(-y+Math.sqrt(delta))/(2*x));
+		
+		scanner.close();
+	}
+
+}

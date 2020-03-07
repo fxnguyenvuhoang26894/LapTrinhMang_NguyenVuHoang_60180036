@@ -1,0 +1,125 @@
+package Lab5;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class Lab5 {
+	public static Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> list =new ArrayList<String>();
+		ArrayList<SanPham> listSp =new ArrayList<SanPham>();
+		//
+		bai1();
+		//bai 2
+		menu2(list);	
+		//bai 3
+		menu3(listSp);
+		
+	}
+
+	//bai 1
+	public static void bai1() {
+		ArrayList<Double> list =new ArrayList<Double>();
+		System.out.print("Nhap vao mot day so thuc");
+		while(true){
+			Double x = scanner.nextDouble();
+			scanner.nextLine();
+			list.add(x);
+			System.out.print("Nhap them (Y/N)");
+			if(scanner.nextLine().equals("N")||scanner.nextLine().equals("n")){
+			break;
+			}
+			System.out.print("day so thuc: ");
+			for(Double y: list) 
+				System.out.print(y+"\t");
+			}
+	}
+	
+	public static void menu2(ArrayList<String> list) {
+		System.out.println("1. Nhap danh sach ho va ten: ");
+		System.out.println("2. Xuat danh sach");
+		System.out.println("3. Xuat danh sach ngau nhien");
+		System.out.println("4. Sap xep giam dan va xuat danh sach");
+		System.out.println("5. Tim va xoa ho ten nhap tu ban phim");
+		System.out.println("6. Ket thuc");
+		System.out.println("\nMoi nhap lua chon cua ban");
+		int so = scanner.nextInt();
+		switch(so) {
+		case 1: nhap(list);
+		case 2: xuat(list);
+		case 3: xuatNgauNhien(list);
+		case 4: sapxep(list);
+		case 5: xoa(list);
+		case 6: break;
+		}
+	}
+	public static void nhap(ArrayList<String> list) {
+		System.out.println("- Nhap thong tin sinh vien: ");
+		while(true) {
+		System.out.println("Ho ten sv: ");
+		list.add(scanner.nextLine());
+		System.out.print("Nhap them (Y/N)");
+		if(scanner.nextLine().equals("N")||scanner.nextLine().equals("n")){
+		break;
+		}
+		}
+	}
+	public static void xuat(ArrayList<String> list) {
+		System.out.println("day ho ten cac sinh vien: ");
+		for(String y: list) 
+			System.out.println(y);
+	}
+	public static void xuatNgauNhien(ArrayList<String> list) {
+		Collections.shuffle(list);
+		System.out.println("day ho ten cac sinh vien ngau nhien: ");
+		for(String y: list) 
+			System.out.println(y);
+	}
+	//sap xep giam dan
+	public static void sapxep(ArrayList<String> list) {
+		Collections.sort(list);
+		Collections.reverse(list);
+		System.out.println("day ho ten cac sinh vien giam dan: ");
+		for(String y: list) 
+			System.out.println(y);
+	}
+	public static void xoa(ArrayList<String> list) {
+		System.out.println("Nhap ho ten sinh vien muon xoa: ");
+		String a = scanner.nextLine();
+		for(String y: list) 
+			if(y==a)
+			list.remove(y);
+	}
+	public static void menu3(ArrayList<SanPham> listSp) {
+		// TODO Auto-generated method stub
+		System.out.println("1. Nhap danh sach san pham: ");
+		System.out.println("2. Sap xep giam dan theo gia va xuat ra man hinh");
+		System.out.println("3. Tim va xoa san pham theo ten");
+		System.out.println("4. Xuat gia trung binh cua cac san pham");
+		System.out.println("\nMoi nhap lua chon cua ban");
+		int so = scanner.nextInt();
+		switch(so) {
+		case 1: nhapSp(listSp);
+		case 2: sapXep(listSp);
+		case 3: xoaSp(listSp);
+		case 4: xuatTbSp(listSp);
+
+		}
+	}
+	private static void xuatTbSp(ArrayList<SanPham> listSp) {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void xoaSp(ArrayList<SanPham> listSp) {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void sapXep(ArrayList<SanPham> listSp) {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void nhapSp(ArrayList<SanPham> listSp) {
+		// TODO Auto-generated method stub
+		
+	}
+}

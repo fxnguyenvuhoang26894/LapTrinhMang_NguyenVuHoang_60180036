@@ -1,0 +1,41 @@
+package MangMayTinh;
+
+import java.util.Scanner;
+
+public class Lab1 {
+
+	public static void main(String[] args) {
+		// Bai 1. Nhập họ và tên
+		Scanner scanner = new Scanner(System.in);
+//		System.out.println("Nhap họ và tên:");
+//		String hoTen = scanner.nextLine();
+//		System.out.println("Nhap điểm Tb:");
+//		int diemTB = scanner.nextInt();
+//		System.out.printf("%s %d điểm",hoTen,diemTB);
+//		
+		// bài 2. Hình chữ nhật
+//		System.out.println("Nhap chiều dài:");
+//		int dai = scanner.nextInt();
+//		System.out.println("Nhap chiều rộng:");
+//		int rong = scanner.nextInt();
+//		int chuVi = (dai + rong) * 2;
+//		System.out.printf("Chu vi hình chữ nhật: %d\n",chuVi);
+//		int dienTich = dai * rong;
+//		System.out.printf("Diện tích hình chữ nhật: %d\n",dienTich);
+//		System.out.printf("Cạnh nhỏ nhất hình chữ nhật: %d\n",Math.min(dai, rong));
+		
+		//bài 3. Hình Lập Phương
+//		System.out.println("Nhập cạnh hình lập phương:");
+//		int canh = scanner.nextInt();
+//		System.out.printf("Thể tích hình lập phương:" +Math.pow(canh, 3));
+
+		//bai 4. 
+		System.out.println("Nhập các hệ số phưng trình bậc 2 lần lượt:");
+		int a = scanner.nextInt();
+		int b = scanner.nextInt();
+		int c = scanner.nextInt();
+		double delta = Math.pow(b, 2) * 4 *a *c;
+		System.out.print(Math.sqrt(delta));
+	}
+
+}

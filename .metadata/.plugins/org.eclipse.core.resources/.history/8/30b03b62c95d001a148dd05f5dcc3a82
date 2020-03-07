@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Lab3 {
+	public static Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		bai1();
+		scanner.close();
+	}
+	public static void bai1() {
+		System.out.println("Nhap vao mot so nguyen: ");
+		int N = scanner.nextInt();
+		boolean ok = true;
+		for(int i=2; i < N-1; i++){ // N là số nhập từ bàn phím
+		if(N % i == 0){
+		ok = false;
+		break;
+		}
+		i++;
+		}
+		if(ok) 
+			System.out.println("so nguyen cua nhap vao la so nguyen to ");
+		else
+			System.out.println("so nguyen cua nhap vao khong la so nguyen to ");
+
+	}
+}

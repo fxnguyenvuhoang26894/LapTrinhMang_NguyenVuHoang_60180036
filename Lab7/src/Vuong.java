@@ -1,0 +1,16 @@
+
+public class Vuong extends ChuNhat{
+	public Vuong(int canh) {
+		super(canh, canh);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void xuat() {
+		// TODO Auto-generated method stub
+		System.out.println("Thong tin hinh vuong: ");
+		System.out.println("Canh " + getRong() +
+							"\nChu vi: " + getChuVi() +
+							"\n Dien Tich" +  getDienTich());
+	}
+}

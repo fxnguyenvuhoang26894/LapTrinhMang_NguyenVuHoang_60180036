@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Lab5 {
+	public static Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Double> list =new ArrayList<Double>();
+		//
+		menu(list);	
+	}
+	//bai 1
+	public static void bai1(ArrayList<Double> list) {
+		while(true){
+			Double x = scanner.nextDouble();
+			scanner.nextLine();
+			list.add(x);
+			System.out.print("Nhap them (Y/N)");
+			if(scanner.nextLine().equals("N")||scanner.nextLine().equals("n")){
+			break;
+			}
+			}
+	}
+	
+	public static void menu(ArrayList<Double> list) {
+		System.out.println("1. Nhap danh sach ho va ten: ");
+		System.out.println("2. Xuat danh sach");
+		System.out.println("3. Xuat danh sach ngau nhien");
+		System.out.println("4. Sap xep giam dan va xuat danh sach");
+		System.out.println("5. Tim va xoa ho ten nhap tu ban phim");
+		System.out.println("6. Ket thuc");
+		System.out.println("\nMoi nhap lua chon cua ban");
+		int so = scanner.nextInt();
+		switch(so) {
+		case 1: nhap(list);
+		case 2: xuat(list);
+		}
+	}
+	public static void nhap(ArrayList<Double> list) {
+		
+	}
+	public static void xuat(ArrayList<Double> list) {
+	for(Double x: list) {
+		System.out.print(x+"\t");
+	}
+	}
+	public static void xuatNgauNhien() {
+	
+	}
+
+}

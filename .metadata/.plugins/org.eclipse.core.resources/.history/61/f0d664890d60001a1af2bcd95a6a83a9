@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Lab6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhap ho va ten:");
+		String hoTen = scanner.nextLine();
+		hoTen = hoTen.toUpperCase();
+		hoTen = hoTen.substring(hoTen.indexOf(" "),hoTen.lastIndexOf(" "));
+		System.out.println(hoTen);
+		scanner.close();
+		
+		
+	}
+	
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Lab7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhap chieu dai chu nhat");
+		int d = scanner.nextInt();
+		System.out.println("Nhap chieu rong chu nhat");
+		int r = scanner.nextInt();
+		ChuNhat cNhat = new ChuNhat(d, r);
+		System.out.println("Nhap canh hinh vuong");
+		int c = scanner.nextInt();
+		Vuong vuong = new Vuong(c);
+		cNhat.xuat();
+		vuong.xuat();
+		scanner.close();
+	}
+
+}

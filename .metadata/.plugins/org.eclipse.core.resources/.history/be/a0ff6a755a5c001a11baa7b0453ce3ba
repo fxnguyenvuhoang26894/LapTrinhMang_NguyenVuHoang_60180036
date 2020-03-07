@@ -1,0 +1,20 @@
+package MangMayTinh;
+
+import java.util.Scanner;
+
+public class Lab1 {
+
+	public static void main(String[] args) {
+		// Bai 1. Nhập h�? tên
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhap h�? và tên:");
+		String hoTen = scanner.nextLine();
+		System.out.println("Nhap điểm Tb:");
+		int diemTB = scanner.nextInt();
+		System.out.printf("%s %d điểm",hoTen,diemTB);
+		scanner.close();
+		
+		// bài 2. Hình chữ nhật
+	}
+
+}
